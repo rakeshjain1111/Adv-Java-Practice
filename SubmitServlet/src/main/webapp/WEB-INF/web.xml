@@ -3,12 +3,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-         
   <display-name>Archetype Created Web Application</display-name>
   
   <servlet>
-    <servlet-name>FirstServlet</servlet-name>
-    <servlet-class>com.rakesh.servlet.FirstServlet</servlet-class>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.rakesh.servlet.MyServlet</servlet-class>
   </servlet>
   
   <servlet>
@@ -22,17 +21,17 @@
   </servlet> 
   
   <servlet-mapping>
-    <servlet-name>FirstServlet</servlet-name>
-    <url-pattern>/servlet</url-pattern>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/myServlet</url-pattern>
   </servlet-mapping>
- 
+
   <servlet-mapping>
     <servlet-name>SecondServlet</servlet-name>
-    <url-pattern>/generic</url-pattern>
+    <url-pattern>/SecondServlet</url-pattern>
   </servlet-mapping>
   
-   <servlet-mapping>
+  <servlet-mapping>
     <servlet-name>ThridServlet</servlet-name>
-    <url-pattern>/http</url-pattern>
+    <url-pattern>/ThridServlet</url-pattern>
   </servlet-mapping>
 </web-app>
